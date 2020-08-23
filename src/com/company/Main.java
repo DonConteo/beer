@@ -1,10 +1,11 @@
 package com.company;
 
-import java.util.Collections;
-
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(String.join("", Collections.nCopies(1000, "Ты должен мне пиво\n")));
+        String[] mass = new String[1000];
+        String beer = String.join("", mass);
+        String youOweMeABeer = beer.replace("null", "You owe me a beer\n");
+        System.out.println(youOweMeABeer);
     }
 }
